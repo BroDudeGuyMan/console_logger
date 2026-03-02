@@ -1,4 +1,4 @@
 #!/usr/bin/bash
-rm -r build
+rm -rf build
 cmake -S . -B build
 cmake --build build

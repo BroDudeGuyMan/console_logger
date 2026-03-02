@@ -1,0 +1,11 @@
+title: Untitled
+description: 
+files:
+  - "*.hpp"
+  - "**/*.hpp"
+  - "*.h"
+  - "**/*.h"
+group:
+  - name: clog
+    title: Console Logger
+    description: Logs color coded tags with user messages to the console.
