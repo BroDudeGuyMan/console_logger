@@ -5,7 +5,7 @@ generator: doxide
 
 # Console Logger
 
-Logs color coded tags with user messages to the console.
+Logs messages directly to the console.
 
 ## Functions
 

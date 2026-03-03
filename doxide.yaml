@@ -1,5 +1,5 @@
-title: Console Logger (Brightline v1.0.0)
-description: A simple include-and-go logging tool for people who just want code to work the first time.
+title: console_logger
+description: A simple logging interface to provice uniform output to the user.
 files:
   - "*.hpp"
   - "**/*.hpp"
@@ -8,4 +8,10 @@ files:
 groups:
   - name: console
     title: Console Logger
-    description: Logs color coded tags with user messages to the console.
+    description: Logs messages directly to the console.
+ouput:
+  dir: docs
+  theme: none
+  assets: false
+  search: false
+  navigation: false
