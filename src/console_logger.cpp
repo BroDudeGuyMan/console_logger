@@ -1,5 +1,4 @@
-#include <console_logger/console_logger.h>
-
+#include "console_logger/console_logger.hpp"
 
 #include <string>
 #include <iostream>
@@ -47,7 +46,7 @@ void logger::init() {
 #endif
 }
 
-void logger::info(std::string& msg) {
+void logger::info(const std::string& msg) {
 	std::cout << std::endl
 		<< detail::emit(ansi::green)
 		<< "[INFO   ] "
@@ -55,7 +54,7 @@ void logger::info(std::string& msg) {
 		<< msg
 		<< std::endl;
 }
-void logger::debug(std::string& msg) {
+void logger::debug(const std::string& msg) {
 	std::cout << std::endl
 		<< detail::emit(ansi::yellow)
 		<< "[DEBUG  ] "
@@ -63,7 +62,7 @@ void logger::debug(std::string& msg) {
 		<< msg
 		<< std::endl;
 }
-void logger::input(std::string& msg) {
+void logger::input(const std::string& msg) {
 	std::cout << std::endl
 		<< detail::emit(ansi::blue)
 		<< "[INPUT  ] "
@@ -72,7 +71,7 @@ void logger::input(std::string& msg) {
 		<< std::endl
 		<< "\t\t >>>";
 }
-void logger::warning(std::string& msg) {
+void logger::warning(const std::string& msg) {
 	std::cout << std::endl
 		<< detail::emit(ansi::yellow)
 		<< "[WARNING] "
@@ -80,7 +79,7 @@ void logger::warning(std::string& msg) {
 		<< msg
 		<< std::endl;
 }
-void logger::error(std::string& msg) {
+void logger::error(const std::string& msg) {
 	std::cout << std::endl
 		<< detail::emit(ansi::red)
 		<< "[ERROR  ] "
@@ -88,7 +87,7 @@ void logger::error(std::string& msg) {
 		<< msg
 		<< std::endl;
 }
-void logger::fatal(std::string& msg) {
+void logger::fatal(const std::string& msg) {
 	std::cout << std::endl
 		<< detail::emit(ansi::bold_red)
 		<< "[FATAL  ] "
