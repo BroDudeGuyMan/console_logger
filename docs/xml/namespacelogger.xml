@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacelogger" kind="namespace" language="C++">
+    <compoundname>logger</compoundname>
+    <innernamespace refid="namespacelogger_1_1detail">logger::detail</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelogger_1aa163d72c169bf8f65a56065ee3b97626" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void logger::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>logger::init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Optional function to make sure Windows terminals will render colors. Colors are enabled by default, but if the environment has them completely disabled, ANSI codes will render as gibberish. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/console_logger/console_logger.h" line="10" column="6" bodyfile="src/console_logger.cpp" bodystart="42" bodyend="48" declfile="include/console_logger/console_logger.h" declline="10" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelogger_1ac1ce55fb084d071286a5a53fd32b4647" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void logger::info</definition>
+        <argsstring>(std::string &amp;msg)</argsstring>
+        <name>info</name>
+        <qualifiedname>logger::info</qualifiedname>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For simple messages and notifications. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>std::string</computeroutput> to be displayed to the user. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/console_logger/console_logger.h" line="15" column="9" bodyfile="src/console_logger.cpp" bodystart="50" bodyend="57" declfile="include/console_logger/console_logger.h" declline="15" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelogger_1a3d8a51eb2d31c8d4045e9da4c15b13be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void logger::input</definition>
+        <argsstring>(std::string &amp;msg)</argsstring>
+        <name>input</name>
+        <qualifiedname>logger::input</qualifiedname>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For prompting the user for input. Adds &apos;&gt;&gt;&gt;&apos; to let the user know its a pompt. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>std::string</computeroutput> to be displayed to the user. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/console_logger/console_logger.h" line="20" column="8" bodyfile="src/console_logger.cpp" bodystart="58" bodyend="66" declfile="include/console_logger/console_logger.h" declline="20" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelogger_1a14b4c99a52048c2035c47162afcbcf72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void logger::warning</definition>
+        <argsstring>(std::string &amp;msg)</argsstring>
+        <name>warning</name>
+        <qualifiedname>logger::warning</qualifiedname>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For letting the user know about possible issues. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>either an <computeroutput>e.what()</computeroutput> or a custom warning. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/console_logger/console_logger.h" line="25" column="6" bodyfile="src/console_logger.cpp" bodystart="67" bodyend="74" declfile="include/console_logger/console_logger.h" declline="25" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelogger_1af8f28d0804a02a2ae7c81d3fd9b537f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void logger::error</definition>
+        <argsstring>(std::string &amp;msg)</argsstring>
+        <name>error</name>
+        <qualifiedname>logger::error</qualifiedname>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For showing the user system error messages that will impact functionality. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>either an <computeroutput>e.what()</computeroutput> or a custom error message. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/console_logger/console_logger.h" line="30" column="8" bodyfile="src/console_logger.cpp" bodystart="75" bodyend="82" declfile="include/console_logger/console_logger.h" declline="30" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelogger_1a60ed2b61be85665803802f2e1635cb70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void logger::fatal</definition>
+        <argsstring>(std::string &amp;msg)</argsstring>
+        <name>fatal</name>
+        <qualifiedname>logger::fatal</qualifiedname>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For alerting to an error that will completely halt the program or cause destructive behavior. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>either <computeroutput>e.what()</computeroutput> or a custom error message. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/console_logger/console_logger.h" line="35" column="8" bodyfile="src/console_logger.cpp" bodystart="83" bodyend="90" declfile="include/console_logger/console_logger.h" declline="35" declcolumn="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Namespace for the entire logging library. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/console_logger.cpp" line="16" column="1"/>
+  </compounddef>
+</doxygen>

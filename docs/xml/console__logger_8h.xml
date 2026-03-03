@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="console__logger_8h" kind="file" language="C++">
+    <compoundname>console_logger.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="console__logger_8cpp" local="no">console_logger.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>console_logger.h</label>
+        <link refid="console__logger_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacelogger">logger</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacelogger" kindref="compound">logger</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelogger_1aa163d72c169bf8f65a56065ee3b97626" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacelogger_1ac1ce55fb084d071286a5a53fd32b4647" kindref="member">info</ref>(std::string&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="namespacelogger_1a3d8a51eb2d31c8d4045e9da4c15b13be" kindref="member">input</ref>(std::string&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelogger_1a14b4c99a52048c2035c47162afcbcf72" kindref="member">warning</ref>(std::string&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="namespacelogger_1af8f28d0804a02a2ae7c81d3fd9b537f1" kindref="member">error</ref>(std::string&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="namespacelogger_1a60ed2b61be85665803802f2e1635cb70" kindref="member">fatal</ref>(std::string&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="include/console_logger/console_logger.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespaceansi" kind="namespace" language="C++">
+    <compoundname>ansi</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="console__logger_8cpp_1aeb6cb11a0036bfbd565628df37bde8f0" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* ansi::reset</definition>
+        <argsstring></argsstring>
+        <name>reset</name>
+        <qualifiedname>ansi::reset</qualifiedname>
+        <initializer>= &quot;\033[0m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/console_logger.cpp" line="8" column="22" bodyfile="src/console_logger.cpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="console__logger_8cpp_1a10664480c1ea3a52fcd858d38fec8d6d" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* ansi::red</definition>
+        <argsstring></argsstring>
+        <name>red</name>
+        <qualifiedname>ansi::red</qualifiedname>
+        <initializer>= &quot;\033[31m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/console_logger.cpp" line="9" column="22" bodyfile="src/console_logger.cpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="console__logger_8cpp_1a4f19daf9387012ad8c83fe0f5fa2f9c9" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* ansi::green</definition>
+        <argsstring></argsstring>
+        <name>green</name>
+        <qualifiedname>ansi::green</qualifiedname>
+        <initializer>= &quot;\033[32m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/console_logger.cpp" line="10" column="22" bodyfile="src/console_logger.cpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="console__logger_8cpp_1a976ca12aa906cf440519cf93af85782d" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* ansi::yellow</definition>
+        <argsstring></argsstring>
+        <name>yellow</name>
+        <qualifiedname>ansi::yellow</qualifiedname>
+        <initializer>= &quot;\033[33m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/console_logger.cpp" line="11" column="22" bodyfile="src/console_logger.cpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="console__logger_8cpp_1a1b5f803475bc56a2ee233273f8549602" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* ansi::blue</definition>
+        <argsstring></argsstring>
+        <name>blue</name>
+        <qualifiedname>ansi::blue</qualifiedname>
+        <initializer>= &quot;\033[34m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/console_logger.cpp" line="12" column="22" bodyfile="src/console_logger.cpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="console__logger_8cpp_1a684af415156605f3b1ddf15426ffade0" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* ansi::bold_red</definition>
+        <argsstring></argsstring>
+        <name>bold_red</name>
+        <qualifiedname>ansi::bold_red</qualifiedname>
+        <initializer>= &quot;\033[1;31m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/console_logger.cpp" line="13" column="22" bodyfile="src/console_logger.cpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/console_logger.cpp" line="7" column="1"/>
+  </compounddef>
+</doxygen>

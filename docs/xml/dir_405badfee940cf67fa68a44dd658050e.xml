@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_405badfee940cf67fa68a44dd658050e" kind="dir">
+    <compoundname>console_logger</compoundname>
+    <innerfile refid="console__logger_8h">console_logger.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/console_logger/"/>
+  </compounddef>
+</doxygen>

@@ -2,6 +2,7 @@
 
 #include <string>
 
+/// Namespace for the entire logging library.
 namespace logger {
 	/**
 	 * Optional function to make sure Windows terminals will render colors. Colors are enabled by default, but if the environment has them completely disabled, ANSI codes will render as gibberish.
