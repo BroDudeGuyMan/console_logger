@@ -55,6 +55,14 @@ void logger::info(std::string& msg) {
 		<< msg
 		<< std::endl;
 }
+void logger::debug(std::string& msg) {
+	std::cout << std::endl
+		<< detail::emit(ansi::yellow)
+		<< "[DEBUG  ] "
+		<< detail::emit(ansi::reset)
+		<< msg
+		<< std::endl;
+}
 void logger::input(std::string& msg) {
 	std::cout << std::endl
 		<< detail::emit(ansi::blue)

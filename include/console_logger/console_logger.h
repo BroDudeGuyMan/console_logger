@@ -14,6 +14,11 @@ namespace logger {
 	 */
 	void    info(std::string& msg);
 	/**
+	 * For developers to find crucial info and validate data.
+	 * @param[in] msg 'std::string' to be displayed, std::to_string() works.
+	 */
+	void debug(std::string& msg);
+	/**
 	 * For prompting the user for input. Adds '>>>' to let the user know its a pompt.
 	 * @param[in] msg `std::string` to be displayed to the user.
 	 */

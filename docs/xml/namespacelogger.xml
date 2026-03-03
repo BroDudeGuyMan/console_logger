@@ -47,6 +47,34 @@
         </inbodydescription>
         <location file="include/console_logger/console_logger.h" line="15" column="9" bodyfile="src/console_logger.cpp" bodystart="50" bodyend="57" declfile="include/console_logger/console_logger.h" declline="15" declcolumn="9"/>
       </memberdef>
+      <memberdef kind="function" id="namespacelogger_1a458a233cc09013e5494db58006ed5032" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void logger::debug</definition>
+        <argsstring>(std::string &amp;msg)</argsstring>
+        <name>debug</name>
+        <qualifiedname>logger::debug</qualifiedname>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For developers to find crucial info and validate data. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&apos;std::string&apos; to be displayed, std::to_string() works. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/console_logger/console_logger.h" line="20" column="6" bodyfile="src/console_logger.cpp" bodystart="58" bodyend="65" declfile="include/console_logger/console_logger.h" declline="20" declcolumn="6"/>
+      </memberdef>
       <memberdef kind="function" id="namespacelogger_1a3d8a51eb2d31c8d4045e9da4c15b13be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void logger::input</definition>
@@ -73,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/console_logger/console_logger.h" line="20" column="8" bodyfile="src/console_logger.cpp" bodystart="58" bodyend="66" declfile="include/console_logger/console_logger.h" declline="20" declcolumn="8"/>
+        <location file="include/console_logger/console_logger.h" line="25" column="8" bodyfile="src/console_logger.cpp" bodystart="66" bodyend="74" declfile="include/console_logger/console_logger.h" declline="25" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="namespacelogger_1a14b4c99a52048c2035c47162afcbcf72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -101,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/console_logger/console_logger.h" line="25" column="6" bodyfile="src/console_logger.cpp" bodystart="67" bodyend="74" declfile="include/console_logger/console_logger.h" declline="25" declcolumn="6"/>
+        <location file="include/console_logger/console_logger.h" line="30" column="6" bodyfile="src/console_logger.cpp" bodystart="75" bodyend="82" declfile="include/console_logger/console_logger.h" declline="30" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacelogger_1af8f28d0804a02a2ae7c81d3fd9b537f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -129,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/console_logger/console_logger.h" line="30" column="8" bodyfile="src/console_logger.cpp" bodystart="75" bodyend="82" declfile="include/console_logger/console_logger.h" declline="30" declcolumn="8"/>
+        <location file="include/console_logger/console_logger.h" line="35" column="8" bodyfile="src/console_logger.cpp" bodystart="83" bodyend="90" declfile="include/console_logger/console_logger.h" declline="35" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="namespacelogger_1a60ed2b61be85665803802f2e1635cb70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -157,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/console_logger/console_logger.h" line="35" column="8" bodyfile="src/console_logger.cpp" bodystart="83" bodyend="90" declfile="include/console_logger/console_logger.h" declline="35" declcolumn="8"/>
+        <location file="include/console_logger/console_logger.h" line="40" column="8" bodyfile="src/console_logger.cpp" bodystart="91" bodyend="98" declfile="include/console_logger/console_logger.h" declline="40" declcolumn="8"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

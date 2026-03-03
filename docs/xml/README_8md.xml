@@ -15,7 +15,7 @@
 <codeline><highlight class="normal">```</highlight></codeline>
 <codeline><highlight class="normal">No<sp/>global<sp/>state<sp/>and<sp/>no<sp/>configuration<sp/>to<sp/>get<sp/>started.</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">[Documentation](docs/index.md)</highlight></codeline>
+<codeline><highlight class="normal">[Documentation](api.md)</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>Requirements</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>C++17<sp/>or<sp/>newer</highlight></codeline>

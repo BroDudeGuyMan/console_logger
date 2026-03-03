@@ -11,6 +11,7 @@
   <compound refid="namespacelogger" kind="namespace"><name>logger</name>
     <member refid="namespacelogger_1aa163d72c169bf8f65a56065ee3b97626" kind="function"><name>init</name></member>
     <member refid="namespacelogger_1ac1ce55fb084d071286a5a53fd32b4647" kind="function"><name>info</name></member>
+    <member refid="namespacelogger_1a458a233cc09013e5494db58006ed5032" kind="function"><name>debug</name></member>
     <member refid="namespacelogger_1a3d8a51eb2d31c8d4045e9da4c15b13be" kind="function"><name>input</name></member>
     <member refid="namespacelogger_1a14b4c99a52048c2035c47162afcbcf72" kind="function"><name>warning</name></member>
     <member refid="namespacelogger_1af8f28d0804a02a2ae7c81d3fd9b537f1" kind="function"><name>error</name></member>

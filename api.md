@@ -15,6 +15,7 @@ Namespace for the entire logging library.
 --------------------------------|---------------------------------------------
 `public void `[`init`](#namespacelogger_1aa163d72c169bf8f65a56065ee3b97626)`()`            | Optional function to make sure Windows terminals will render colors. Colors are enabled by default, but if the environment has them completely disabled, ANSI codes will render as gibberish.
 `public void `[`info`](#namespacelogger_1ac1ce55fb084d071286a5a53fd32b4647)`(std::string & msg)`            | For simple messages and notifications. 
+`public void `[`debug`](#namespacelogger_1a458a233cc09013e5494db58006ed5032)`(std::string & msg)`            | For developers to find crucial info and validate data. 
 `public void `[`input`](#namespacelogger_1a3d8a51eb2d31c8d4045e9da4c15b13be)`(std::string & msg)`            | For prompting the user for input. Adds '>>>' to let the user know its a pompt. 
 `public void `[`warning`](#namespacelogger_1a14b4c99a52048c2035c47162afcbcf72)`(std::string & msg)`            | For letting the user know about possible issues. 
 `public void `[`error`](#namespacelogger_1af8f28d0804a02a2ae7c81d3fd9b537f1)`(std::string & msg)`            | For showing the user system error messages that will impact functionality. 
@@ -31,6 +32,12 @@ Optional function to make sure Windows terminals will render colors. Colors are 
 For simple messages and notifications. 
 #### Parameters
 * `msg` `std::string` to be displayed to the user.
+
+#### `public void `[`debug`](#namespacelogger_1a458a233cc09013e5494db58006ed5032)`(std::string & msg)` 
+
+For developers to find crucial info and validate data. 
+#### Parameters
+* `msg` 'std::string' to be displayed, std::to_string() works.
 
 #### `public void `[`input`](#namespacelogger_1a3d8a51eb2d31c8d4045e9da4c15b13be)`(std::string & msg)` 
 
