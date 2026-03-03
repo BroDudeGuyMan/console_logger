@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>console_logger</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="index_1md_README"/>console_logger is a small, dependency free C++ logging library with ANSI color support. It&apos;s designed to be an include-and-use logger that helps to create uniform output for you and your users. No objects are created, meaning that logging is as simple as: <programlisting filename=".cpp"><codeline><highlight class="normal"><ref refid="namespacelogger_1a3d8a51eb2d31c8d4045e9da4c15b13be" kindref="member">logger::input</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>a<sp/>file<sp/>path&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespacelogger_1ac1ce55fb084d071286a5a53fd32b4647" kindref="member">logger::info</ref>(</highlight><highlight class="stringliteral">&quot;File<sp/>created<sp/>successfuly!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting> No global state and no configuration to get started.</para>
+<para>Documentation</para>
+<sect1 id="index_1autotoc_md1">
+<title>Requirements</title>
+<para><itemizedlist>
+<listitem><para>C++17 or newer</para>
+</listitem><listitem><para>CMake ≥ 3.2</para>
+</listitem><listitem><para>ANSI-capable terminal (using the <computeroutput><ref refid="namespacelogger_1aa163d72c169bf8f65a56065ee3b97626" kindref="member">logger::init()</ref></computeroutput> function will set up the terminal for colors or disable them if the terminal does not support colors)</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="index_1autotoc_md2">
+<title>Installation</title>
+<sect2 id="index_1autotoc_md3">
+<title>Option 1: Install system-wide with Cmake</title>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">gh<sp/>repo<sp/>clone<sp/>BroDudeGuyMan/console_logger</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>console_logger</highlight></codeline>
+<codeline><highlight class="normal">mkdir<sp/>build<sp/>&amp;&amp;<sp/>cd<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>..</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--build<sp/>.</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>cmake<sp/>--install<sp/>.</highlight></codeline>
+</programlisting> This installs:<itemizedlist>
+<listitem><para>headers to <computeroutput>/usr/local/include</computeroutput></para>
+</listitem><listitem><para>the library to <computeroutput>/usr/local/lib</computeroutput></para>
+</listitem><listitem><para>CMake config files to <computeroutput>/usr/local/lib/cmake/console_logger</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="index_1autotoc_md4">
+<title>Option 2: Use as a subproject.</title>
+<para>This helps larger projects track dependencies. Add it to your project: <programlisting filename=".bash"><codeline><highlight class="normal">git<sp/>submodule<sp/>add<sp/>https://github.con/BroDudeGuyMan/console_logger.git</highlight></codeline>
+</programlisting> Then in <computeroutput>CMakeLists.txt</computeroutput> <programlisting filename=".cmake"><codeline><highlight class="normal">add_subdirectory(external/console_logger)</highlight></codeline>
+<codeline><highlight class="normal">target_Link_libraries(&lt;your_target&gt;<sp/>console_logger::console_logger)</highlight></codeline>
+</programlisting> This way, there is no install step. </para>
+</sect2>
+<sect2 id="index_1autotoc_md5">
+<title>Windows + Visual Studio</title>
+<sect3 id="index_1autotoc_md6">
+<title>Requirements</title>
+<para><itemizedlist>
+<listitem><para>Windows 10 or newer</para>
+</listitem><listitem><para>Visual Studio 2019 or 2022</para>
+</listitem><listitem><para>&quot;Desktop development with C++&quot; workload</para>
+</listitem><listitem><para>CMake support enabled (should be on by default for VS)</para>
+</listitem></itemizedlist>
+</para>
+</sect3>
+<sect3 id="index_1autotoc_md7">
+<title>Option 1: Use as a subproject</title>
+<para>This avoids install paths and permissions. It also helps with dependencies. <programlisting><codeline><highlight class="normal">MyProject/</highlight></codeline>
+<codeline><highlight class="normal">├──<sp/>CMakeLists.txt</highlight></codeline>
+<codeline><highlight class="normal">├──<sp/>src/</highlight></codeline>
+<codeline><highlight class="normal">└──<sp/>external/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>└──<sp/>console_logger/</highlight></codeline>
+</programlisting> <programlisting filename=".cmake"><codeline><highlight class="normal">add_subdirectory(external/console_logger)</highlight></codeline>
+<codeline><highlight class="normal">target_link_libraries(&lt;executable_name&gt;<sp/>PRIVATE<sp/>console_logger::console_logger)</highlight></codeline>
+</programlisting> Open the project folder in VS and it should configure and build automatically.</para>
+</sect3>
+<sect3 id="index_1autotoc_md8">
+<title>Option 2: Install system-wide</title>
+<para>From a <bold>Developer Command Prompt for Visual Studio</bold>: <programlisting filename=".bat"><codeline><highlight class="normal">git<sp/>clone<sp/>https://github.com/&lt;your-username&gt;/console_logger.git</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>console_logger</highlight></codeline>
+<codeline><highlight class="normal">mkdir<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>..<sp/>-DCMAKE_BUILD_TYPE=Release</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--build<sp/>.<sp/>--config<sp/>Release</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--install<sp/>.</highlight></codeline>
+</programlisting> Then in your project: <programlisting filename=".cmake"><codeline><highlight class="normal">find_package(console_logger<sp/>REQUIRED)</highlight></codeline>
+<codeline><highlight class="normal">target_link_libraries(&lt;executable_name&gt;<sp/>PRIVATE<sp/>console_logger::console_logger)</highlight></codeline>
+</programlisting></para>
+<para><bold>ANSI Color Support on Windows</bold></para>
+<para>The logger by default will use colors, and Linux machines should have no issues with colors. Windows command prompts may have issues with ANSI codes, so using <computeroutput><ref refid="namespacelogger_1aa163d72c169bf8f65a56065ee3b97626" kindref="member">logger::init()</ref></computeroutput> may be useful. It will check whether the current Windows command prompt has support for colors, and if not will disable them.</para>
+</sect3>
+</sect2>
+</sect1>
+<sect1 id="index_1autotoc_md9">
+<title>Usage with CMake (&lt;tt&gt;find_package&lt;/tt&gt;)</title>
+<para>After installation: <programlisting filename=".cmake"><codeline><highlight class="normal">find_package(console_logger<sp/>REQUIRED)</highlight></codeline>
+<codeline><highlight class="normal">target_link_libraries(&lt;your_target&gt;<sp/>PRIVATE<sp/>console_logger::console_logger)</highlight></codeline>
+</programlisting> You <bold>do not</bold> need to manually add include directories.</para>
+</sect1>
+<sect1 id="index_1autotoc_md10">
+<title>Usage in Code</title>
+<para>Include the header: <programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;console/logger/console_logger.h&gt;</highlight></codeline>
+</programlisting> Log from anywhere: <programlisting filename=".cpp"><codeline><highlight class="normal"><ref refid="namespacelogger_1ac1ce55fb084d071286a5a53fd32b4647" kindref="member">logger::info</ref>(</highlight><highlight class="stringliteral">&quot;Application<sp/>started&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespacelogger_1a14b4c99a52048c2035c47162afcbcf72" kindref="member">logger::warning</ref>(</highlight><highlight class="stringliteral">&quot;Low<sp/>memory&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespacelogger_1af8f28d0804a02a2ae7c81d3fd9b537f1" kindref="member">logger::error</ref>(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>open<sp/>file&quot;</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="index_1autotoc_md11">
+<title>ANSI color support</title>
+<para><itemizedlist>
+<listitem><para>Colors are enabled by default on Linux and MacOS</para>
+</listitem><listitem><para>Windows has patchy support<itemizedlist>
+<listitem><para><lsquo/><ref refid="namespacelogger_1aa163d72c169bf8f65a56065ee3b97626" kindref="member">logger::init()</ref><rsquo/> automatically detects color support for terminals and is safe to call on all platforms.</para>
+</listitem><listitem><para>Colors are autamatically disabled if support is not detected</para>
+</listitem><listitem><para>Colors remain on if supported by the console</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<sect2 id="index_1autotoc_md12">
+<title>Guaranteed Behavior</title>
+<para><itemizedlist>
+<listitem><para>Never prints raw ANSI codes when color is disabled</para>
+</listitem><listitem><para>Never fails if colors are not supported</para>
+</listitem><listitem><para>Never requires global objects or macros</para>
+</listitem><listitem><para>Safe for projects of any kind: other libraries, tools, and small utilities </para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

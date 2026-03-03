@@ -6,7 +6,7 @@ logger::info("File created successfuly!");
 ```
 No global state and no configuration to get started.
 
-[Documentation](docs/index.md)
+[Documentation](api.md)
 
 ## Requirements
 - C++17 or newer

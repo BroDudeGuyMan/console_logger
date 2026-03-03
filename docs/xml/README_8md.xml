@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>console_logger</highlight></codeline>
+<codeline><highlight class="normal">console_logger<sp/>is<sp/>a<sp/>small,<sp/>dependency<sp/>free<sp/>C++<sp/>logging<sp/>library<sp/>with<sp/>ANSI<sp/>color<sp/>support.<sp/>It&apos;s<sp/>designed<sp/>to<sp/>be<sp/>an<sp/>include-and-use<sp/>logger<sp/>that<sp/>helps<sp/>to<sp/>create<sp/>uniform<sp/>output<sp/>for<sp/>you<sp/>and<sp/>your<sp/>users.<sp/>No<sp/>objects<sp/>are<sp/>created,<sp/>meaning<sp/>that<sp/>logging<sp/>is<sp/>as<sp/>simple<sp/>as:</highlight></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">logger::input(&quot;Please<sp/>enter<sp/>a<sp/>file<sp/>path&quot;);</highlight></codeline>
+<codeline><highlight class="normal">logger::info(&quot;File<sp/>created<sp/>successfuly!&quot;);</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">No<sp/>global<sp/>state<sp/>and<sp/>no<sp/>configuration<sp/>to<sp/>get<sp/>started.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[Documentation](docs/index.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Requirements</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>C++17<sp/>or<sp/>newer</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>CMake<sp/>≥<sp/>3.2</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>ANSI-capable<sp/>terminal<sp/>(using<sp/>the<sp/>`logger::init()`<sp/>function<sp/>will<sp/>set<sp/>up<sp/>the<sp/>terminal<sp/>for<sp/>colors<sp/>or<sp/>disable<sp/>them<sp/>if<sp/>the<sp/>terminal<sp/>does<sp/>not<sp/>support<sp/>colors)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Installation</highlight></codeline>
+<codeline><highlight class="normal">###<sp/>Option<sp/>1:<sp/>Install<sp/>system-wide<sp/>with<sp/>Cmake</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">gh<sp/>repo<sp/>clone<sp/>BroDudeGuyMan/console_logger</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>console_logger</highlight></codeline>
+<codeline><highlight class="normal">mkdir<sp/>build<sp/>&amp;&amp;<sp/>cd<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>..</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--build<sp/>.</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>cmake<sp/>--install<sp/>.</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">This<sp/>installs:</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>headers<sp/>to<sp/>`/usr/local/include`</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>the<sp/>library<sp/>to<sp/>`/usr/local/lib`</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>CMake<sp/>config<sp/>files<sp/>to<sp/>`/usr/local/lib/cmake/console_logger`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Option<sp/>2:<sp/>Use<sp/>as<sp/>a<sp/>subproject.</highlight></codeline>
+<codeline><highlight class="normal">This<sp/>helps<sp/>larger<sp/>projects<sp/>track<sp/>dependencies.</highlight></codeline>
+<codeline><highlight class="normal">Add<sp/>it<sp/>to<sp/>your<sp/>project:</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>submodule<sp/>add<sp/>https://github.con/BroDudeGuyMan/console_logger.git</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Then<sp/>in<sp/>`CMakeLists.txt`</highlight></codeline>
+<codeline><highlight class="normal">```cmake</highlight></codeline>
+<codeline><highlight class="normal">add_subdirectory(external/console_logger)</highlight></codeline>
+<codeline><highlight class="normal">target_Link_libraries(&lt;your_target&gt;<sp/>console_logger::console_logger)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">This<sp/>way,<sp/>there<sp/>is<sp/>no<sp/>install<sp/>step.</highlight></codeline>
+<codeline><highlight class="normal">###<sp/>Windows<sp/>+<sp/>Visual<sp/>Studio</highlight></codeline>
+<codeline><highlight class="normal">####<sp/>Requirements</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Windows<sp/>10<sp/>or<sp/>newer</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Visual<sp/>Studio<sp/>2019<sp/>or<sp/>2022</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>&quot;Desktop<sp/>development<sp/>with<sp/>C++&quot;<sp/>workload</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>CMake<sp/>support<sp/>enabled<sp/>(should<sp/>be<sp/>on<sp/>by<sp/>default<sp/>for<sp/>VS)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Option<sp/>1:<sp/>Use<sp/>as<sp/>a<sp/>subproject</highlight></codeline>
+<codeline><highlight class="normal">This<sp/>avoids<sp/>install<sp/>paths<sp/>and<sp/>permissions.<sp/>It<sp/>also<sp/>helps<sp/>with<sp/>dependencies.</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">MyProject/</highlight></codeline>
+<codeline><highlight class="normal">├──<sp/>CMakeLists.txt</highlight></codeline>
+<codeline><highlight class="normal">├──<sp/>src/</highlight></codeline>
+<codeline><highlight class="normal">└──<sp/>external/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>└──<sp/>console_logger/</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">```cmake</highlight></codeline>
+<codeline><highlight class="normal">add_subdirectory(external/console_logger)</highlight></codeline>
+<codeline><highlight class="normal">target_link_libraries(&lt;executable_name&gt;<sp/>PRIVATE<sp/>console_logger::console_logger)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Open<sp/>the<sp/>project<sp/>folder<sp/>in<sp/>VS<sp/>and<sp/>it<sp/>should<sp/>configure<sp/>and<sp/>build<sp/>automatically.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Option<sp/>2:<sp/>Install<sp/>system-wide</highlight></codeline>
+<codeline><highlight class="normal">From<sp/>a<sp/>**Developer<sp/>Command<sp/>Prompt<sp/>for<sp/>Visual<sp/>Studio**:</highlight></codeline>
+<codeline><highlight class="normal">```bat</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>clone<sp/>https://github.com/&lt;your-username&gt;/console_logger.git</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>console_logger</highlight></codeline>
+<codeline><highlight class="normal">mkdir<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>..<sp/>-DCMAKE_BUILD_TYPE=Release</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--build<sp/>.<sp/>--config<sp/>Release</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--install<sp/>.</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Then<sp/>in<sp/>your<sp/>project:</highlight></codeline>
+<codeline><highlight class="normal">```cmake</highlight></codeline>
+<codeline><highlight class="normal">find_package(console_logger<sp/>REQUIRED)</highlight></codeline>
+<codeline><highlight class="normal">target_link_libraries(&lt;executable_name&gt;<sp/>PRIVATE<sp/>console_logger::console_logger)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**ANSI<sp/>Color<sp/>Support<sp/>on<sp/>Windows**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>logger<sp/>by<sp/>default<sp/>will<sp/>use<sp/>colors,<sp/>and<sp/>Linux<sp/>machines<sp/>should<sp/>have<sp/>no<sp/>issues<sp/>with<sp/>colors.<sp/>Windows<sp/>command<sp/>prompts<sp/>may<sp/>have<sp/>issues<sp/>with<sp/>ANSI<sp/>codes,<sp/>so<sp/>using<sp/>`logger::init()`<sp/>may<sp/>be<sp/>useful.<sp/>It<sp/>will<sp/>check<sp/>whether<sp/>the<sp/>current<sp/>Windows<sp/>command<sp/>prompt<sp/>has<sp/>support<sp/>for<sp/>colors,<sp/>and<sp/>if<sp/>not<sp/>will<sp/>disable<sp/>them.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Usage<sp/>with<sp/>CMake<sp/>(`find_package`)</highlight></codeline>
+<codeline><highlight class="normal">After<sp/>installation:</highlight></codeline>
+<codeline><highlight class="normal">```cmake</highlight></codeline>
+<codeline><highlight class="normal">find_package(console_logger<sp/>REQUIRED)</highlight></codeline>
+<codeline><highlight class="normal">target_link_libraries(&lt;your_target&gt;<sp/>PRIVATE<sp/>console_logger::console_logger)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">You<sp/>**do<sp/>not**<sp/>need<sp/>to<sp/>manually<sp/>add<sp/>include<sp/>directories.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Usage<sp/>in<sp/>Code</highlight></codeline>
+<codeline><highlight class="normal">Include<sp/>the<sp/>header:</highlight></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;console/logger/console_logger.h&gt;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Log<sp/>from<sp/>anywhere:</highlight></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">logger::info(&quot;Application<sp/>started&quot;);</highlight></codeline>
+<codeline><highlight class="normal">logger::warning(&quot;Low<sp/>memory&quot;);</highlight></codeline>
+<codeline><highlight class="normal">logger::error(&quot;Failed<sp/>to<sp/>open<sp/>file&quot;);</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>ANSI<sp/>color<sp/>support</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Colors<sp/>are<sp/>enabled<sp/>by<sp/>default<sp/>on<sp/>Linux<sp/>and<sp/>MacOS</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Windows<sp/>has<sp/>patchy<sp/>support</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>`logger::init()&apos;<sp/>automatically<sp/>detects<sp/>color<sp/>support<sp/>for<sp/>terminals<sp/>and<sp/>is<sp/>safe<sp/>to<sp/>call<sp/>on<sp/>all<sp/>platforms.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>Colors<sp/>are<sp/>autamatically<sp/>disabled<sp/>if<sp/>support<sp/>is<sp/>not<sp/>detected</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>Colors<sp/>remain<sp/>on<sp/>if<sp/>supported<sp/>by<sp/>the<sp/>console</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Guaranteed<sp/>Behavior</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Never<sp/>prints<sp/>raw<sp/>ANSI<sp/>codes<sp/>when<sp/>color<sp/>is<sp/>disabled</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Never<sp/>fails<sp/>if<sp/>colors<sp/>are<sp/>not<sp/>supported</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Never<sp/>requires<sp/>global<sp/>objects<sp/>or<sp/>macros</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Safe<sp/>for<sp/>projects<sp/>of<sp/>any<sp/>kind:<sp/>other<sp/>libraries,<sp/>tools,<sp/>and<sp/>small<sp/>utilities</highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

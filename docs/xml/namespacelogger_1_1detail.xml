@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacelogger_1_1detail" kind="namespace" language="C++">
+    <compoundname>logger::detail</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="console__logger_8cpp_1ae5bde1aa2d5ef870af3e82483f44c21c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool logger::detail::color_enabled</definition>
+        <argsstring></argsstring>
+        <name>color_enabled</name>
+        <qualifiedname>logger::detail::color_enabled</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/console_logger.cpp" line="17" column="13" bodyfile="src/console_logger.cpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="console__logger_8cpp_1a96c2079d14e2dd389217fc775ea9cb20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * logger::detail::emit</definition>
+        <argsstring>(const char *code)</argsstring>
+        <name>emit</name>
+        <qualifiedname>logger::detail::emit</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/console_logger.cpp" line="18" column="19" bodyfile="src/console_logger.cpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/console_logger.cpp" line="16" column="1"/>
+  </compounddef>
+</doxygen>

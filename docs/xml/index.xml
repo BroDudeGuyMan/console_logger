@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="namespaceansi" kind="namespace"><name>ansi</name>
+    <member refid="console__logger_8cpp_1aeb6cb11a0036bfbd565628df37bde8f0" kind="variable"><name>reset</name></member>
+    <member refid="console__logger_8cpp_1a10664480c1ea3a52fcd858d38fec8d6d" kind="variable"><name>red</name></member>
+    <member refid="console__logger_8cpp_1a4f19daf9387012ad8c83fe0f5fa2f9c9" kind="variable"><name>green</name></member>
+    <member refid="console__logger_8cpp_1a976ca12aa906cf440519cf93af85782d" kind="variable"><name>yellow</name></member>
+    <member refid="console__logger_8cpp_1a1b5f803475bc56a2ee233273f8549602" kind="variable"><name>blue</name></member>
+    <member refid="console__logger_8cpp_1a684af415156605f3b1ddf15426ffade0" kind="variable"><name>bold_red</name></member>
+  </compound>
+  <compound refid="namespacelogger" kind="namespace"><name>logger</name>
+    <member refid="namespacelogger_1aa163d72c169bf8f65a56065ee3b97626" kind="function"><name>init</name></member>
+    <member refid="namespacelogger_1ac1ce55fb084d071286a5a53fd32b4647" kind="function"><name>info</name></member>
+    <member refid="namespacelogger_1a3d8a51eb2d31c8d4045e9da4c15b13be" kind="function"><name>input</name></member>
+    <member refid="namespacelogger_1a14b4c99a52048c2035c47162afcbcf72" kind="function"><name>warning</name></member>
+    <member refid="namespacelogger_1af8f28d0804a02a2ae7c81d3fd9b537f1" kind="function"><name>error</name></member>
+    <member refid="namespacelogger_1a60ed2b61be85665803802f2e1635cb70" kind="function"><name>fatal</name></member>
+  </compound>
+  <compound refid="namespacelogger_1_1detail" kind="namespace"><name>logger::detail</name>
+    <member refid="console__logger_8cpp_1ae5bde1aa2d5ef870af3e82483f44c21c" kind="variable"><name>color_enabled</name></member>
+    <member refid="console__logger_8cpp_1a96c2079d14e2dd389217fc775ea9cb20" kind="function"><name>emit</name></member>
+  </compound>
+  <compound refid="console__logger_8h" kind="file"><name>console_logger.h</name>
+  </compound>
+  <compound refid="README_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="console__logger_8cpp" kind="file"><name>console_logger.cpp</name>
+  </compound>
+  <compound refid="dir_405badfee940cf67fa68a44dd658050e" kind="dir"><name>console_logger</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>
