@@ -29,7 +29,6 @@ This installs:
 - CMake config files to `/usr/local/lib/cmake/console_logger`
 
 ### Option 2: Use as a subproject.
-This helps larger projects track dependencies.
 Add it to your project:
 ```bash
 git submodule add https://github.con/BroDudeGuyMan/console_logger.git
@@ -39,44 +38,26 @@ Then in `CMakeLists.txt`
 add_subdirectory(external/console_logger)
 target_Link_libraries(<your_target> console_logger::console_logger)
 ```
-This way, there is no install step.
-### Windows + Visual Studio
-#### Requirements
-- Windows 10 or newer
-- Visual Studio 2019 or 2022
-- "Desktop development with C++" workload
-- CMake support enabled (should be on by default for VS)
 
-#### Option 1: Use as a subproject
-This avoids install paths and permissions. It also helps with dependencies.
-```
-MyProject/
-├── CMakeLists.txt
-├── src/
-└── external/
-    └── console_logger/
-```
+### Option 3: Use CMake FetchContent (My favorite)
+This option is nice, because CMake will bring it locally into the project directory, and you can specify versions of specific dependencies.
 ```cmake
-add_subdirectory(external/console_logger)
-target_link_libraries(<executable_name> PRIVATE console_logger::console_logger)
-```
-Open the project folder in VS and it should configure and build automatically.
+include(FetchContent)
 
-#### Option 2: Install system-wide
-From a **Developer Command Prompt for Visual Studio**:
-```bat
-git clone https://github.com/<your-username>/console_logger.git
-cd console_logger
-mkdir build
-cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
-cmake --build . --config Release
-cmake --install .
+FetchContent_Declare(
+        console_logger
+        GIT_REPOSITORY https://github.com/BroDudeGuyMan/console_logger.git
+        GIT_TAG v1.0.3
+        # See releases page for version tags you can use.
+)
 ```
-Then in your project:
+
+You can then link the library as usual:
 ```cmake
-find_package(console_logger REQUIRED)
-target_link_libraries(<executable_name> PRIVATE console_logger::console_logger)
+target_link_libraries(<your_target>
+        PRIVATE
+         console_logger
+)
 ```
 
 **ANSI Color Support on Windows**
