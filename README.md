@@ -75,7 +75,7 @@ You **do not** need to manually add include directories.
 ## Usage in Code
 Include the header:
 ```cpp
-#include <console/logger/console_logger.h>
+#include <console_logger/console_logger.h>
 ```
 Log from anywhere:
 ```cpp
