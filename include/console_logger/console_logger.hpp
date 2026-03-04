@@ -1,10 +1,9 @@
 #pragma once
 
-#include <console_logger/export_console_logger.hpp>
 #include <string>
 
 /// Namespace for the entire logging library.
-namespace CONSOLE_LOGGER_EXPORT logger {
+namespace  logger {
 	/**
 	 * Optional function to make sure Windows terminals will render colors. Colors are enabled by default, but if the environment has them completely disabled, ANSI codes will render as gibberish.
 	 */
