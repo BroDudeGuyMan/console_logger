@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.2)
+cmake_minimum_required(VERSION 4.0)
 
 project(console_logger
-	VERSION 1.0.5
+	VERSION 2.0.0
 	DESCRIPTION
 	"A simple C++ wrapper for making uniform console output."
 	LANGUAGES CXX
